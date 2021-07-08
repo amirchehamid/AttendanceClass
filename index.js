@@ -3,11 +3,10 @@ const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 const UserModel = require("./student/UserModels.js")
 const UserList = require("./lecturer/UserLists.js")
-
-mongo_url = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.yoj4p.mongodb.net/Attendance?retryWrites=true&w=majority"
+require('dotenv').config();
 
 //connect mongodb
-mongoose.connect(mongo_url,{
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () =>{

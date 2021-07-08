@@ -4,6 +4,8 @@ const mongoose = require("mongoose")
 const UserModel = require("./student/UserModels.js")
 const UserList = require("./lecturer/UserLists.js")
 
+mongo_url = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.yoj4p.mongodb.net/Attendance?retryWrites=true&w=majority"
+
 //connect mongodb
 mongoose.connect(mongo_url,{
     useNewUrlParser: true,

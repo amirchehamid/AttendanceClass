@@ -5,7 +5,7 @@ const UserModel = require("./student/UserModels.js")
 const UserList = require("./lecturer/UserLists.js")
 
 //connect mongodb
-mongoose.connect("mongodb+srv://m001-student:m001-mongodb-basics@sandbox.yoj4p.mongodb.net/Attendance?retryWrites=true&w=majority",{
+mongoose.connect(mongo_url,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () =>{
